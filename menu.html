@@ -3,15 +3,18 @@
 
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PJVBQN752R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJVBQN752R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-PJVBQN752R');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-PJVBQN752R');
+  </script>
 
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -61,16 +64,65 @@
     <div class="container scrolltrig from-bottom" id="menucontainer">
       <div class="section-title">
         <h2>Menu</h2>
-        <p>Get ready for a experience like no other! Our new menu is coming soon, with quick service and delicious food, we're the perfect choice for a satisfying meal or a hot drink! </p>
-        <p>Keep an eye out for our big reveal and get ready to indulge in some seriously tasty fast food!</p>
       </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 text-center">
+          <h3>Espresso</h3>
+          <ul>
+            <li>Single - £2.25</li>
+            <li>Double - £2.50</li>
+            <li>Americano - £2.50</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+          <h3>Coffee</h3>
+          <ul>
+            <li>Latte - £2.75</li>
+            <li>Flat White - £2.75</li>
+            <li>Cappuccino - £2.75</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+          <h3>Hot Beverages</h3>
+          <ul>
+            <li>Hot Chocolate - £2.95</li>
+            <li>Mocha - £2.95</li>
 
-
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+          <h3>Speciality Lattes</h3>
+          <ul>
+            <li>Caramel Latte - £3.25</li>
+            <li>Hazelnut Latte - £3.25</li>
+            <li>Gingerbread Latte - £3.25</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+          <h3>Tea</h3>
+          <ul>
+            <li>Tea - £2.25</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+          <h3>Food</h3>
+          <ul>
+            <li>Carrot Cake - £3.50</li>
+            <li>Banoffee - £3.50</li>
+            <li>Croissant - £1.50</li>
+            <li>Almond croissant - £1.95</li>
+            <li>Pain au chocolat - £1.75</li>
+            <li>Pain au raisin - £1.95</li>
+            <li>Chocolate Brownie - £2.95</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Loading Screen -->
   <div id="loader"></div>
+  <a href="#" class="totop d-flex align-items-center justify-content-center"><i class="bi bi-caret-up-fill"></i></a>
 
   <!-- Library JS -->
   <script src="library/scroll-trigger/gsap.min.js"></script>
