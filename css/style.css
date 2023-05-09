@@ -536,6 +536,12 @@ section {
   color: #fff;
 }
 
+/* Store */
+.store p {
+  text-align: center;
+  font-size: 18px;
+}
+
 /* ScrollTrigger Animations */
 .zoom-in {
   opacity: 0;
