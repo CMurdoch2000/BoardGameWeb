@@ -456,6 +456,12 @@ section {
   left: calc(50% - 35px);
 }
 
+.menu .tmmenu {
+ text-align: center;
+ text-decoration: underline;
+ font-size: 22px;
+}
+
 /* Games */
 .games .game-box {
   text-align: center;
