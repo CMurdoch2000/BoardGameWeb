@@ -472,6 +472,27 @@ section {
  font-size: 22px;
 }
 
+.menu .menu-box {
+  text-align: center;
+  padding: 10px 0px 20px 0px;
+  transition: all ease-in-out 0.1s;
+  background: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.18);
+  border-radius: 10%;
+}
+
+.menu .menu-box h4 {
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.menu .menu-box img {
+  width: 50%;
+  border-radius: 10%;
+
+}
+
+
 /* Games */
 .games .game-box {
   text-align: center;

@@ -80,6 +80,25 @@ Array.prototype.forEach.call(document.getElementsByClassName("game-box"), functi
   };
 });
 
+/* Menus Hover Box */
+Array.prototype.forEach.call(document.getElementsByClassName("menu-box"), function(box) {
+  box.addEventListener('mouseover', function() {
+      box.style.border = "4px solid #34b7a7";
+
+  });
+  let timer;
+  box.onmouseout = function() {
+    box.onmouseover = function() {
+      if (timer) {
+        clearTimeout(timer);
+      }
+    };
+    timer = setTimeout(function() {
+      box.style.border = "0px solid #34b7a7";
+    }, 200);
+  };
+});
+
 /* Enable Tooltips */
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
