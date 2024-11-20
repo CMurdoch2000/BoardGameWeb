@@ -245,9 +245,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #34b7a7;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1250px) {
   .mobile-nav-toggle {
     display: block;
+  }
+
+  .navbar{
+    order: 6 !important;
   }
 
   .navbar ul {
@@ -312,7 +316,7 @@ section {
   margin-top: 50px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1250px) {
   section {
     margin-top: 30px;
   }
@@ -343,78 +347,16 @@ section {
   left: calc(50% - 25px);
 }
 
-/* Hero - Index */
-#hero {
-  margin-top: 0px;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/herobg2.jpg") top right;
-  background-size: cover;
-}
 
-#hero .container {
-  padding-top: 70px;
-  position: relative;
-}
-
-@media (max-width: 992px) {
-  #hero .container {
-    padding-top: 58px;
+@media all and (min-width: 1250px) {
+  #homemobile {
+    display: none !important;
   }
 }
 
-#hero h1 {
-  margin: 0;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 56px;
-  color: white;
-}
-
-#hero h2 {
-  color: white;
-  margin: 10px 0 0 0;
-  font-size: 36px;
-}
-
-#hero .btn-about {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 12px 40px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin-top: 30px;
-  color: #fff;
-  background: #34b7a7;
-}
-
-#hero .btn-about:hover {
-  background: #3dc8b7;
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 992px) {
-  #hero {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/herobg2.jpg") top right;
-    background-size: cover;
-  }
-
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
+@media not all and (min-width: 1250px) {
+  #home {
+    display: none !important;
   }
 }
 
@@ -432,6 +374,27 @@ section {
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.18);
 }
 
+/* Parites */
+
+.section-title h3 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.section-title h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #34b7a7;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
 
 /* Menu */
 .menu ul li {
@@ -620,7 +583,7 @@ section {
   visibility: hidden;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1250px) {
   .totop {
     visibility: visible;
   }
